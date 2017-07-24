@@ -20,11 +20,11 @@ const config = {
     watch: !isProd,
     devtool: isProd ? "cheap-source-map" : "cheap-module-source-map",
     entry: {
-        landoopuicore: "./src/index.js"
+      'kafka-ui-lib': "./src/index.js"
     },
     output: {
         filename: isProd ? '[name].min.js' : '[name].js',
-        library: 'landoopuicore',
+        library: 'kafka-ui-lib',
         libraryTarget: 'umd',
         umdNamedDefine: true,
         path: path.resolve(__dirname, 'dist'),
